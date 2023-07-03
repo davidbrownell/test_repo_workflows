@@ -1,0 +1,14 @@
+name: Workflow 2
+
+on:
+  workflow_call:
+    inputs:
+      value: {type: string, required: true }
+
+jobs:
+  _108e23bd-2890-4a8e-8394-c812dd113472:
+    name: Workflow 2 job
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Hello world!"
