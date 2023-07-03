@@ -7,6 +7,6 @@ on:
 jobs:
   _0d3103e5-6264-49bd-942b-429210847127:
     name: Workflow1
-    uses: .github/workflows/workflow2.yaml
+    uses: ./.github/workflows/workflow2.yaml
     with:
       value: the_value
