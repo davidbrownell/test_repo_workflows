@@ -1,0 +1,10 @@
+name: The Action
+description: This is the Action
+
+inputs:
+  value: { type: string, required: true }
+
+runs:
+  using: composite
+  steps:
+    - run: echo "Hello '${{ inputs.value }}'"
