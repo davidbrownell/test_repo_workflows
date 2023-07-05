@@ -10,3 +10,4 @@ jobs:
     uses: ./.github/workflows/workflow2.yaml
     with:
       value: the_value
+      conditional: true
