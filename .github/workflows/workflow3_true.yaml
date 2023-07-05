@@ -1,0 +1,16 @@
+name: Workflow3 true
+
+on:
+  workflow_call:
+    inputs:
+      value: {type: string, required: true }
+
+jobs:
+  _4b53768c-51b0-474f-9110-66ab87190027:
+    name: Workflow 3 true job
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: ./../actions/the_action
+        with:
+          value: ${{ inputs.value }}
