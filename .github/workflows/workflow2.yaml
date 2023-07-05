@@ -12,22 +12,3 @@ jobs:
     uses: ./.github/workflows/workflow3_${{ inputs.conditional }}.yaml
     with:
       value: ${{ inputs.value }}
-
-
-
-
-
-  _108e23bd-2890-4a8e-8394-c812dd113472:
-    name: Workflow 2 job (true)
-    if: ${{ inputs.conditional }}
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: ./../actions/the_action
-        with:
-          value: ${{ inputs.value }}
-
-  _f85149cb-f9b4-4e5f-8cbb-9932e8c42019:
-    name: Workflow 2 job (false)
-    if: ${{ !inputs.conditional }}
-    uses: ./.github/workflows/does_not_exist.yaml
