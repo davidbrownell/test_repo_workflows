@@ -7,6 +7,16 @@ on:
       conditional: {type: boolean, required: true }
 
 jobs:
+  _8c0322e9-a549-4c51-8662-29db9942edc6:
+    name: Workflow 2 job (true)
+    uses: ./.github/workflows/workflow3_${{ inputs.conditional }}.yaml
+    with:
+      value: ${{ inputs.value }}
+
+
+
+
+
   _108e23bd-2890-4a8e-8394-c812dd113472:
     name: Workflow 2 job (true)
     if: ${{ inputs.conditional }}
